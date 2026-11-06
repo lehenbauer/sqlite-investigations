@@ -1,0 +1,14 @@
+{
+  "forum": "https://sqlite.org/bugs/forumpost/1b06e712af3a3d18",
+  "checked_on": "2026-11-05",
+  "reported_source_id": "62cf9fb51a6ac16a7d5c9b27aa905e110f48bd3d186440c9be5cc029e68aae6e",
+  "reported_archive_sha256": "0b352e5a06f7043fd240cf2159662cc5e318f3c97c5ad2ec53f6489ab4495731",
+  "current_trunk_source_id": "6107f5affe4ff1cfa39689a899877301bdd9f8f210dd8e11bfb4a0f26ff681c1",
+  "current_trunk_archive_sha256": "4d4a28c2282539710f32e71e23c01fbeb8d69550b0346b4c1d0b326bea3513e6",
+  "artifacts": {
+    "candidate.patch": "a0f13b218977b0f3900b7cc063792eceb6b55035020b2e411559ddb0b3a9c27e",
+    "unionall3.test": "6c90eb6d3261fcfd585463b6d819f734395a04e0606f47514131c57c87f41a20",
+    "validate.py": "aa25b98bb9b298be652e57ff108d083890d0936babb311d5572e2ca0798decfa"
+  },
+  "platform": "macOS arm64"
+}

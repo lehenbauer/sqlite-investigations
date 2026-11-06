@@ -1,0 +1,39 @@
+{
+  "report_query": {
+    "expected_rows": 15,
+    "reported_revision_rows": 13,
+    "current_trunk_rows": 13,
+    "candidate_rows": 15
+  },
+  "differential_matrix": {
+    "cases": 540,
+    "unmodified_mismatches": 216,
+    "candidate_mismatches": 0
+  },
+  "focused_regression": {
+    "checks": 10,
+    "unmodified_issues": 7,
+    "candidate_release_issues": 0,
+    "candidate_debug_issues": 0
+  },
+  "allocation_resilience": {
+    "checks": 231,
+    "issues": 0
+  },
+  "related_suites": {
+    "checks": 804,
+    "issues": 0
+  },
+  "select_suites": {
+    "checks": 37820,
+    "issues": 0
+  },
+  "veryquick": {
+    "unmodified_checks": 334161,
+    "candidate_checks": 334172,
+    "unmodified_issues": 140,
+    "candidate_issues": 140,
+    "same_named_issues": true,
+    "named_issue_count": 44
+  }
+}
