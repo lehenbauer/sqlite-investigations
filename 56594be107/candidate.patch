@@ -1,0 +1,23 @@
+--- a/src/dbpage.c
++++ b/src/dbpage.c
+@@ -156,7 +156,7 @@
+       pIdxInfo->idxFlags = SQLITE_INDEX_SCAN_UNIQUE;
+       pIdxInfo->estimatedCost = 1.0;
+       pIdxInfo->aConstraintUsage[i].argvIndex = iPlan ? 2 : 1;
+-      pIdxInfo->aConstraintUsage[i].omit = 1;
++      pIdxInfo->aConstraintUsage[i].omit = 0;
+       iPlan |= 1;
+       break;
+     }
+@@ -259,8 +259,10 @@
+   pCsr->szPage = sqlite3BtreeGetPageSize(pBt);
+   pCsr->mxPgno = sqlite3BtreeLastPage(pBt);
+   if( idxNum & 1 ){
+-    i64 iPg = sqlite3_value_int64(argv[idxNum>>1]);
++    i64 iPg;
+     assert( argc>(idxNum>>1) );
++    sqlite3_value_numeric_type(argv[idxNum>>1]);
++    iPg = sqlite3_value_int64(argv[idxNum>>1]);
+     if( iPg<1 || iPg>pCsr->mxPgno ){
+       pCsr->pgno = 1;
+       pCsr->mxPgno = 0;

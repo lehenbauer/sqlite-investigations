@@ -1,0 +1,79 @@
+# Regression coverage for forum post 56594be107 and numeric-text lookups.
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+set testprefix dbpagecmp
+
+ifcapable !vtab||!compound {
+  finish_test
+  return
+}
+
+sqlite3_db_config db DEFENSIVE 0
+do_execsql_test setup {
+  CREATE TABLE t1(x);
+  CREATE TEMP TABLE p(pgno INTEGER PRIMARY KEY);
+  INSERT INTO p SELECT pgno FROM sqlite_dbpage;
+} {}
+
+set DB [sqlite3_connection_pointer db]
+foreach col {pgno rowid} {
+  foreach op {eq in} {
+    if {$op eq "eq"} {
+      set condition "$col=?1"
+    } else {
+      set condition "$col IN (?1,NULL)"
+    }
+    set sql "SELECT
+       (SELECT group_concat(pgno) FROM sqlite_dbpage WHERE $condition),
+       (SELECT group_concat(pgno) FROM p WHERE $condition)"
+    set stmt [sqlite3_prepare $DB $sql -1 tail]
+    set n 0
+    foreach {type value} {
+      int 1 int 2 int64 4294967297 int64 9223372036854775807
+      double 1.5 double 2.0 double 2.0000000000000004
+      text 2 text 2abc text 0.2e1 text 20e-1 text 2e1 text 1.5
+      blob 2 null {}
+    } {
+      incr n
+      do_test "$col-$op-$n" {
+        sqlite3_reset $stmt
+        switch $type {
+          text {sqlite3_bind_text $stmt 1 $value -1}
+          blob {sqlite3_bind_blob $stmt 1 $value [string length $value]}
+          null {sqlite3_bind_null $stmt 1}
+          default {sqlite3_bind_$type $stmt 1 $value}
+        }
+        set rc [sqlite3_step $stmt]
+        set actual [sqlite3_column_text $stmt 0]
+        set expected [sqlite3_column_text $stmt 1]
+        list $rc [expr {$actual eq $expected}]
+      } {SQLITE_ROW 1}
+    }
+    sqlite3_finalize $stmt
+  }
+}
+
+do_execsql_test duplicates {
+  SELECT pgno FROM sqlite_dbpage WHERE pgno IN (1,1.5,2,2,NULL);
+} {1 2}
+do_execsql_test update-fraction {
+  BEGIN;
+  UPDATE sqlite_dbpage SET data=data WHERE pgno=1.5;
+  SELECT changes();
+  ROLLBACK;
+} {0}
+do_execsql_test update-text {
+  BEGIN;
+  UPDATE sqlite_dbpage SET data=data WHERE pgno='2abc';
+  SELECT changes();
+  ROLLBACK;
+} {0}
+do_execsql_test update-numeric-text {
+  BEGIN;
+  UPDATE sqlite_dbpage SET data=data WHERE pgno='0.2e1';
+  SELECT changes();
+  ROLLBACK;
+} {1}
+do_execsql_test integrity {PRAGMA integrity_check} {ok}
+
+finish_test

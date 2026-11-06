@@ -1,0 +1,8 @@
+{
+  "binary": "candidate-build/sqlite3",
+  "exit": 0,
+  "expected_checks": 1800,
+  "checked": 1800,
+  "failures": [],
+  "stderr": ""
+}

@@ -1,0 +1,137 @@
+setup... Ok
+pgno-eq-1... Ok
+pgno-eq-2... Ok
+pgno-eq-3... Ok
+pgno-eq-4... Ok
+pgno-eq-5...
+! pgno-eq-5 expected: [SQLITE_ROW 1]
+! pgno-eq-5 got:      [SQLITE_ROW 0]
+pgno-eq-6... Ok
+pgno-eq-7...
+! pgno-eq-7 expected: [SQLITE_ROW 1]
+! pgno-eq-7 got:      [SQLITE_ROW 0]
+pgno-eq-8... Ok
+pgno-eq-9...
+! pgno-eq-9 expected: [SQLITE_ROW 1]
+! pgno-eq-9 got:      [SQLITE_ROW 0]
+pgno-eq-10...
+! pgno-eq-10 expected: [SQLITE_ROW 1]
+! pgno-eq-10 got:      [SQLITE_ROW 0]
+pgno-eq-11...
+! pgno-eq-11 expected: [SQLITE_ROW 1]
+! pgno-eq-11 got:      [SQLITE_ROW 0]
+pgno-eq-12...
+! pgno-eq-12 expected: [SQLITE_ROW 1]
+! pgno-eq-12 got:      [SQLITE_ROW 0]
+pgno-eq-13...
+! pgno-eq-13 expected: [SQLITE_ROW 1]
+! pgno-eq-13 got:      [SQLITE_ROW 0]
+pgno-eq-14...
+! pgno-eq-14 expected: [SQLITE_ROW 1]
+! pgno-eq-14 got:      [SQLITE_ROW 0]
+pgno-eq-15... Ok
+pgno-in-1... Ok
+pgno-in-2... Ok
+pgno-in-3... Ok
+pgno-in-4... Ok
+pgno-in-5...
+! pgno-in-5 expected: [SQLITE_ROW 1]
+! pgno-in-5 got:      [SQLITE_ROW 0]
+pgno-in-6... Ok
+pgno-in-7...
+! pgno-in-7 expected: [SQLITE_ROW 1]
+! pgno-in-7 got:      [SQLITE_ROW 0]
+pgno-in-8... Ok
+pgno-in-9...
+! pgno-in-9 expected: [SQLITE_ROW 1]
+! pgno-in-9 got:      [SQLITE_ROW 0]
+pgno-in-10... Ok
+pgno-in-11... Ok
+pgno-in-12... Ok
+pgno-in-13...
+! pgno-in-13 expected: [SQLITE_ROW 1]
+! pgno-in-13 got:      [SQLITE_ROW 0]
+pgno-in-14...
+! pgno-in-14 expected: [SQLITE_ROW 1]
+! pgno-in-14 got:      [SQLITE_ROW 0]
+pgno-in-15... Ok
+rowid-eq-1... Ok
+rowid-eq-2... Ok
+rowid-eq-3... Ok
+rowid-eq-4... Ok
+rowid-eq-5...
+! rowid-eq-5 expected: [SQLITE_ROW 1]
+! rowid-eq-5 got:      [SQLITE_ROW 0]
+rowid-eq-6... Ok
+rowid-eq-7...
+! rowid-eq-7 expected: [SQLITE_ROW 1]
+! rowid-eq-7 got:      [SQLITE_ROW 0]
+rowid-eq-8... Ok
+rowid-eq-9...
+! rowid-eq-9 expected: [SQLITE_ROW 1]
+! rowid-eq-9 got:      [SQLITE_ROW 0]
+rowid-eq-10...
+! rowid-eq-10 expected: [SQLITE_ROW 1]
+! rowid-eq-10 got:      [SQLITE_ROW 0]
+rowid-eq-11...
+! rowid-eq-11 expected: [SQLITE_ROW 1]
+! rowid-eq-11 got:      [SQLITE_ROW 0]
+rowid-eq-12...
+! rowid-eq-12 expected: [SQLITE_ROW 1]
+! rowid-eq-12 got:      [SQLITE_ROW 0]
+rowid-eq-13...
+! rowid-eq-13 expected: [SQLITE_ROW 1]
+! rowid-eq-13 got:      [SQLITE_ROW 0]
+rowid-eq-14...
+! rowid-eq-14 expected: [SQLITE_ROW 1]
+! rowid-eq-14 got:      [SQLITE_ROW 0]
+rowid-eq-15... Ok
+rowid-in-1... Ok
+rowid-in-2... Ok
+rowid-in-3... Ok
+rowid-in-4... Ok
+rowid-in-5...
+! rowid-in-5 expected: [SQLITE_ROW 1]
+! rowid-in-5 got:      [SQLITE_ROW 0]
+rowid-in-6... Ok
+rowid-in-7...
+! rowid-in-7 expected: [SQLITE_ROW 1]
+! rowid-in-7 got:      [SQLITE_ROW 0]
+rowid-in-8... Ok
+rowid-in-9...
+! rowid-in-9 expected: [SQLITE_ROW 1]
+! rowid-in-9 got:      [SQLITE_ROW 0]
+rowid-in-10... Ok
+rowid-in-11... Ok
+rowid-in-12... Ok
+rowid-in-13...
+! rowid-in-13 expected: [SQLITE_ROW 1]
+! rowid-in-13 got:      [SQLITE_ROW 0]
+rowid-in-14...
+! rowid-in-14 expected: [SQLITE_ROW 1]
+! rowid-in-14 got:      [SQLITE_ROW 0]
+rowid-in-15... Ok
+duplicates...
+! duplicates expected: [1 2]
+! duplicates got:      [1 1 2]
+update-fraction...
+! update-fraction expected: [0]
+! update-fraction got:      [1]
+update-text...
+! update-text expected: [0]
+! update-text got:      [1]
+update-numeric-text...
+! update-numeric-text expected: [1]
+! update-numeric-text got:      [0]
+integrity... Ok
+SQLite 2026-11-05 21:31:50 62cf9fb51a6ac16a7d5c9b27aa905e110f48bd3d186440c9be5cc029e68aae6e
+30 errors out of 67 tests on [hostname removed] Darwin 64-bit
+!Failures on these tests: pgno-eq-5 pgno-eq-7 pgno-eq-9 pgno-eq-10 pgno-eq-11 pgno-eq-12 pgno-eq-13 pgno-eq-14 pgno-in-5 pgno-in-7 pgno-in-9 pgno-in-13 pgno-in-14 rowid-eq-5 rowid-eq-7 rowid-eq-9 rowid-eq-10 rowid-eq-11 rowid-eq-12 rowid-eq-13 rowid-eq-14 rowid-in-5 rowid-in-7 rowid-in-9 rowid-in-13 rowid-in-14 duplicates update-fraction update-text update-numeric-text
+All memory allocations freed - no leaks
+Memory used:          now          0  max     213152  max-size      65544
+Allocation count:     now          0  max        166
+Page-cache used:      now          0  max          0  max-size       1032
+Page-cache overflow:  now          0  max       9216
+Maximum memory usage: 213152 bytes
+Current memory usage: 0 bytes
+Number of malloc()  : -1 calls

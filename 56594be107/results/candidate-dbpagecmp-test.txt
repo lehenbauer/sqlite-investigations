@@ -1,0 +1,76 @@
+setup... Ok
+pgno-eq-1... Ok
+pgno-eq-2... Ok
+pgno-eq-3... Ok
+pgno-eq-4... Ok
+pgno-eq-5... Ok
+pgno-eq-6... Ok
+pgno-eq-7... Ok
+pgno-eq-8... Ok
+pgno-eq-9... Ok
+pgno-eq-10... Ok
+pgno-eq-11... Ok
+pgno-eq-12... Ok
+pgno-eq-13... Ok
+pgno-eq-14... Ok
+pgno-eq-15... Ok
+pgno-in-1... Ok
+pgno-in-2... Ok
+pgno-in-3... Ok
+pgno-in-4... Ok
+pgno-in-5... Ok
+pgno-in-6... Ok
+pgno-in-7... Ok
+pgno-in-8... Ok
+pgno-in-9... Ok
+pgno-in-10... Ok
+pgno-in-11... Ok
+pgno-in-12... Ok
+pgno-in-13... Ok
+pgno-in-14... Ok
+pgno-in-15... Ok
+rowid-eq-1... Ok
+rowid-eq-2... Ok
+rowid-eq-3... Ok
+rowid-eq-4... Ok
+rowid-eq-5... Ok
+rowid-eq-6... Ok
+rowid-eq-7... Ok
+rowid-eq-8... Ok
+rowid-eq-9... Ok
+rowid-eq-10... Ok
+rowid-eq-11... Ok
+rowid-eq-12... Ok
+rowid-eq-13... Ok
+rowid-eq-14... Ok
+rowid-eq-15... Ok
+rowid-in-1... Ok
+rowid-in-2... Ok
+rowid-in-3... Ok
+rowid-in-4... Ok
+rowid-in-5... Ok
+rowid-in-6... Ok
+rowid-in-7... Ok
+rowid-in-8... Ok
+rowid-in-9... Ok
+rowid-in-10... Ok
+rowid-in-11... Ok
+rowid-in-12... Ok
+rowid-in-13... Ok
+rowid-in-14... Ok
+rowid-in-15... Ok
+duplicates... Ok
+update-fraction... Ok
+update-text... Ok
+update-numeric-text... Ok
+integrity... Ok
+SQLite 2026-11-05 21:31:50 62cf9fb51a6ac16a7d5c9b27aa905e110f48bd3d186440c9be5cc029e68aalt1
+0 errors out of 67 tests on [hostname removed] Darwin 64-bit
+All memory allocations freed - no leaks
+Memory used:          now          0  max     213152  max-size      65544
+Allocation count:     now          0  max        166
+Page-cache used:      now          0  max          0  max-size       1032
+Page-cache overflow:  now          0  max       9216
+Maximum memory usage: 213152 bytes
+Current memory usage: 0 bytes
+Number of malloc()  : -1 calls

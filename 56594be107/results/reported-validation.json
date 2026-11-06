@@ -1,0 +1,3069 @@
+{
+  "binary": "reported-build/sqlite3",
+  "exit": 0,
+  "expected_checks": 1800,
+  "checked": 1800,
+  "failures": [
+    {
+      "case": "pgno IN (1,1.5,2,2,NULL)",
+      "actual": "[1,1,2]",
+      "expected": "[1,2]"
+    },
+    {
+      "case": "pgno IN (2,1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN (1.0,1.5,2,2,NULL)",
+      "actual": "[1,1,2]",
+      "expected": "[1,2]"
+    },
+    {
+      "case": "pgno IN (2.0,1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno=1.5",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "1.5=pgno",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno IN (1.5,NULL)",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno=1.5 AND pgno>=1",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux pgno=1.5",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema pgno=1.5",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE pgno=1.5",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "rowid=1.5",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "1.5=rowid",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid IN (1.5,NULL)",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid=1.5 AND rowid>=1",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux rowid=1.5",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema rowid=1.5",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE rowid=1.5",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "pgno IN (1.5,1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno=2.5",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "2.5=pgno",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno IN (2.5,NULL)",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno=2.5 AND pgno>=1",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux pgno=2.5",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema pgno=2.5",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE pgno=2.5",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "rowid=2.5",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "2.5=rowid",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid IN (2.5,NULL)",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid=2.5 AND rowid>=1",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux rowid=2.5",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema rowid=2.5",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE rowid=2.5",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "pgno IN (2.5,1.5,2,2,NULL)",
+      "actual": "[1,2,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno='2abc'",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "'2abc'=pgno",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno IN ('2abc',NULL)",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno='2abc' AND pgno>=1",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux pgno='2abc'",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema pgno='2abc'",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE pgno='2abc'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "rowid='2abc'",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "'2abc'=rowid",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid IN ('2abc',NULL)",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid='2abc' AND rowid>=1",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux rowid='2abc'",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema rowid='2abc'",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE rowid='2abc'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "pgno IN ('2abc',1.5,2,2,NULL)",
+      "actual": "[1,2,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno=x'32'",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "x'32'=pgno",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno IN (x'32',NULL)",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno=x'32' AND pgno>=1",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux pgno=x'32'",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema pgno=x'32'",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE pgno=x'32'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "rowid=x'32'",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "x'32'=rowid",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid IN (x'32',NULL)",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid=x'32' AND rowid>=1",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux rowid=x'32'",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema rowid=x'32'",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE rowid=x'32'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "pgno IN (x'32',1.5,2,2,NULL)",
+      "actual": "[1,2,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN ('2',1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN ('2.0',1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN ('2e0',1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno='0.2e1'",
+      "actual": "[]",
+      "expected": "[2]"
+    },
+    {
+      "case": "'0.2e1'=pgno",
+      "actual": "[]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno='0.2e1' AND pgno>=1",
+      "actual": "[]",
+      "expected": "[2]"
+    },
+    {
+      "case": "aux pgno='0.2e1'",
+      "actual": "[]",
+      "expected": "[2]"
+    },
+    {
+      "case": "schema pgno='0.2e1'",
+      "actual": "[]",
+      "expected": "[2]"
+    },
+    {
+      "case": "UPDATE pgno='0.2e1'",
+      "actual": "0",
+      "expected": "1"
+    },
+    {
+      "case": "rowid='0.2e1'",
+      "actual": "[]",
+      "expected": "[2]"
+    },
+    {
+      "case": "'0.2e1'=rowid",
+      "actual": "[]",
+      "expected": "[2]"
+    },
+    {
+      "case": "rowid='0.2e1' AND rowid>=1",
+      "actual": "[]",
+      "expected": "[2]"
+    },
+    {
+      "case": "aux rowid='0.2e1'",
+      "actual": "[]",
+      "expected": "[2]"
+    },
+    {
+      "case": "schema rowid='0.2e1'",
+      "actual": "[]",
+      "expected": "[2]"
+    },
+    {
+      "case": "UPDATE rowid='0.2e1'",
+      "actual": "0",
+      "expected": "1"
+    },
+    {
+      "case": "pgno IN ('0.2e1',1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno='2e1'",
+      "actual": "[2]",
+      "expected": "[20]"
+    },
+    {
+      "case": "'2e1'=pgno",
+      "actual": "[2]",
+      "expected": "[20]"
+    },
+    {
+      "case": "pgno='2e1' AND pgno>=1",
+      "actual": "[2]",
+      "expected": "[20]"
+    },
+    {
+      "case": "aux pgno='2e1'",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema pgno='2e1'",
+      "actual": "[2]",
+      "expected": "[20]"
+    },
+    {
+      "case": "rowid='2e1'",
+      "actual": "[2]",
+      "expected": "[20]"
+    },
+    {
+      "case": "'2e1'=rowid",
+      "actual": "[2]",
+      "expected": "[20]"
+    },
+    {
+      "case": "rowid='2e1' AND rowid>=1",
+      "actual": "[2]",
+      "expected": "[20]"
+    },
+    {
+      "case": "aux rowid='2e1'",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema rowid='2e1'",
+      "actual": "[2]",
+      "expected": "[20]"
+    },
+    {
+      "case": "pgno IN ('2e1',1.5,2,2,NULL)",
+      "actual": "[1,2,20]",
+      "expected": "[2,20]"
+    },
+    {
+      "case": "pgno='20e-1'",
+      "actual": "[20]",
+      "expected": "[2]"
+    },
+    {
+      "case": "'20e-1'=pgno",
+      "actual": "[20]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno='20e-1' AND pgno>=1",
+      "actual": "[20]",
+      "expected": "[2]"
+    },
+    {
+      "case": "aux pgno='20e-1'",
+      "actual": "[]",
+      "expected": "[2]"
+    },
+    {
+      "case": "schema pgno='20e-1'",
+      "actual": "[20]",
+      "expected": "[2]"
+    },
+    {
+      "case": "rowid='20e-1'",
+      "actual": "[20]",
+      "expected": "[2]"
+    },
+    {
+      "case": "'20e-1'=rowid",
+      "actual": "[20]",
+      "expected": "[2]"
+    },
+    {
+      "case": "rowid='20e-1' AND rowid>=1",
+      "actual": "[20]",
+      "expected": "[2]"
+    },
+    {
+      "case": "aux rowid='20e-1'",
+      "actual": "[]",
+      "expected": "[2]"
+    },
+    {
+      "case": "schema rowid='20e-1'",
+      "actual": "[20]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN ('20e-1',1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno='1e1'",
+      "actual": "[1]",
+      "expected": "[10]"
+    },
+    {
+      "case": "'1e1'=pgno",
+      "actual": "[1]",
+      "expected": "[10]"
+    },
+    {
+      "case": "pgno='1e1' AND pgno>=1",
+      "actual": "[1]",
+      "expected": "[10]"
+    },
+    {
+      "case": "aux pgno='1e1'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema pgno='1e1'",
+      "actual": "[1]",
+      "expected": "[10]"
+    },
+    {
+      "case": "rowid='1e1'",
+      "actual": "[1]",
+      "expected": "[10]"
+    },
+    {
+      "case": "'1e1'=rowid",
+      "actual": "[1]",
+      "expected": "[10]"
+    },
+    {
+      "case": "rowid='1e1' AND rowid>=1",
+      "actual": "[1]",
+      "expected": "[10]"
+    },
+    {
+      "case": "aux rowid='1e1'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema rowid='1e1'",
+      "actual": "[1]",
+      "expected": "[10]"
+    },
+    {
+      "case": "pgno IN ('1e1',1.5,2,2,NULL)",
+      "actual": "[1,2,10]",
+      "expected": "[2,10]"
+    },
+    {
+      "case": "pgno='1.5'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "'1.5'=pgno",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno IN ('1.5',NULL)",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno='1.5' AND pgno>=1",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux pgno='1.5'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema pgno='1.5'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE pgno='1.5'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "rowid='1.5'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "'1.5'=rowid",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid IN ('1.5',NULL)",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid='1.5' AND rowid>=1",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux rowid='1.5'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema rowid='1.5'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE rowid='1.5'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "pgno IN ('1.5',1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN (NULL,1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN (0,1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN (-1,1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN (4294967297,1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN (9223372036854775807,1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN (' 2 ',1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN ('+2',1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN ('002',1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN ('0x2',1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN ('',1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN ('2 '||char(0)||'abc',1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN ('2'||char(0),1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno='0.1e1'",
+      "actual": "[]",
+      "expected": "[1]"
+    },
+    {
+      "case": "'0.1e1'=pgno",
+      "actual": "[]",
+      "expected": "[1]"
+    },
+    {
+      "case": "pgno='0.1e1' AND pgno>=1",
+      "actual": "[]",
+      "expected": "[1]"
+    },
+    {
+      "case": "aux pgno='0.1e1'",
+      "actual": "[]",
+      "expected": "[1]"
+    },
+    {
+      "case": "schema pgno='0.1e1'",
+      "actual": "[]",
+      "expected": "[1]"
+    },
+    {
+      "case": "UPDATE pgno='0.1e1'",
+      "actual": "0",
+      "expected": "1"
+    },
+    {
+      "case": "rowid='0.1e1'",
+      "actual": "[]",
+      "expected": "[1]"
+    },
+    {
+      "case": "'0.1e1'=rowid",
+      "actual": "[]",
+      "expected": "[1]"
+    },
+    {
+      "case": "rowid='0.1e1' AND rowid>=1",
+      "actual": "[]",
+      "expected": "[1]"
+    },
+    {
+      "case": "aux rowid='0.1e1'",
+      "actual": "[]",
+      "expected": "[1]"
+    },
+    {
+      "case": "schema rowid='0.1e1'",
+      "actual": "[]",
+      "expected": "[1]"
+    },
+    {
+      "case": "UPDATE rowid='0.1e1'",
+      "actual": "0",
+      "expected": "1"
+    },
+    {
+      "case": "pgno IN ('0.1e1',1.5,2,2,NULL)",
+      "actual": "[1,1,2]",
+      "expected": "[1,2]"
+    },
+    {
+      "case": "pgno='30e-1'",
+      "actual": "[30]",
+      "expected": "[3]"
+    },
+    {
+      "case": "'30e-1'=pgno",
+      "actual": "[30]",
+      "expected": "[3]"
+    },
+    {
+      "case": "pgno='30e-1' AND pgno>=1",
+      "actual": "[30]",
+      "expected": "[3]"
+    },
+    {
+      "case": "schema pgno='30e-1'",
+      "actual": "[30]",
+      "expected": "[3]"
+    },
+    {
+      "case": "rowid='30e-1'",
+      "actual": "[30]",
+      "expected": "[3]"
+    },
+    {
+      "case": "'30e-1'=rowid",
+      "actual": "[30]",
+      "expected": "[3]"
+    },
+    {
+      "case": "rowid='30e-1' AND rowid>=1",
+      "actual": "[30]",
+      "expected": "[3]"
+    },
+    {
+      "case": "schema rowid='30e-1'",
+      "actual": "[30]",
+      "expected": "[3]"
+    },
+    {
+      "case": "pgno IN ('30e-1',1.5,2,2,NULL)",
+      "actual": "[1,2,3]",
+      "expected": "[2,3]"
+    },
+    {
+      "case": "pgno='3e1'",
+      "actual": "[3]",
+      "expected": "[30]"
+    },
+    {
+      "case": "'3e1'=pgno",
+      "actual": "[3]",
+      "expected": "[30]"
+    },
+    {
+      "case": "pgno='3e1' AND pgno>=1",
+      "actual": "[3]",
+      "expected": "[30]"
+    },
+    {
+      "case": "schema pgno='3e1'",
+      "actual": "[3]",
+      "expected": "[30]"
+    },
+    {
+      "case": "rowid='3e1'",
+      "actual": "[3]",
+      "expected": "[30]"
+    },
+    {
+      "case": "'3e1'=rowid",
+      "actual": "[3]",
+      "expected": "[30]"
+    },
+    {
+      "case": "rowid='3e1' AND rowid>=1",
+      "actual": "[3]",
+      "expected": "[30]"
+    },
+    {
+      "case": "schema rowid='3e1'",
+      "actual": "[3]",
+      "expected": "[30]"
+    },
+    {
+      "case": "pgno IN ('3e1',1.5,2,2,NULL)",
+      "actual": "[1,2,30]",
+      "expected": "[2,30]"
+    },
+    {
+      "case": "pgno='3.0e+1'",
+      "actual": "[3]",
+      "expected": "[30]"
+    },
+    {
+      "case": "'3.0e+1'=pgno",
+      "actual": "[3]",
+      "expected": "[30]"
+    },
+    {
+      "case": "pgno='3.0e+1' AND pgno>=1",
+      "actual": "[3]",
+      "expected": "[30]"
+    },
+    {
+      "case": "schema pgno='3.0e+1'",
+      "actual": "[3]",
+      "expected": "[30]"
+    },
+    {
+      "case": "rowid='3.0e+1'",
+      "actual": "[3]",
+      "expected": "[30]"
+    },
+    {
+      "case": "'3.0e+1'=rowid",
+      "actual": "[3]",
+      "expected": "[30]"
+    },
+    {
+      "case": "rowid='3.0e+1' AND rowid>=1",
+      "actual": "[3]",
+      "expected": "[30]"
+    },
+    {
+      "case": "schema rowid='3.0e+1'",
+      "actual": "[3]",
+      "expected": "[30]"
+    },
+    {
+      "case": "pgno IN ('3.0e+1',1.5,2,2,NULL)",
+      "actual": "[1,2,30]",
+      "expected": "[2,30]"
+    },
+    {
+      "case": "pgno='3.1e1'",
+      "actual": "[3]",
+      "expected": "[31]"
+    },
+    {
+      "case": "'3.1e1'=pgno",
+      "actual": "[3]",
+      "expected": "[31]"
+    },
+    {
+      "case": "pgno='3.1e1' AND pgno>=1",
+      "actual": "[3]",
+      "expected": "[31]"
+    },
+    {
+      "case": "schema pgno='3.1e1'",
+      "actual": "[3]",
+      "expected": "[31]"
+    },
+    {
+      "case": "rowid='3.1e1'",
+      "actual": "[3]",
+      "expected": "[31]"
+    },
+    {
+      "case": "'3.1e1'=rowid",
+      "actual": "[3]",
+      "expected": "[31]"
+    },
+    {
+      "case": "rowid='3.1e1' AND rowid>=1",
+      "actual": "[3]",
+      "expected": "[31]"
+    },
+    {
+      "case": "schema rowid='3.1e1'",
+      "actual": "[3]",
+      "expected": "[31]"
+    },
+    {
+      "case": "pgno IN ('3.1e1',1.5,2,2,NULL)",
+      "actual": "[1,2,31]",
+      "expected": "[2,31]"
+    },
+    {
+      "case": "pgno='1e100'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "'1e100'=pgno",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno='1e100' AND pgno>=1",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux pgno='1e100'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema pgno='1e100'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE pgno='1e100'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "rowid='1e100'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "'1e100'=rowid",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid='1e100' AND rowid>=1",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux rowid='1e100'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema rowid='1e100'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE rowid='1e100'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "pgno IN ('1e100',1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno='1e-100'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "'1e-100'=pgno",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux pgno='1e-100'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema pgno='1e-100'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE pgno='1e-100'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "rowid='1e-100'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "'1e-100'=rowid",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux rowid='1e-100'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema rowid='1e-100'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE rowid='1e-100'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "pgno IN ('1e-100',1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno='1e+'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "'1e+'=pgno",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno IN ('1e+',NULL)",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno='1e+' AND pgno>=1",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux pgno='1e+'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema pgno='1e+'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE pgno='1e+'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "rowid='1e+'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "'1e+'=rowid",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid IN ('1e+',NULL)",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid='1e+' AND rowid>=1",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux rowid='1e+'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema rowid='1e+'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE rowid='1e+'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "pgno IN ('1e+',1.5,2,2,NULL)",
+      "actual": "[1,1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno='1e'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "'1e'=pgno",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno IN ('1e',NULL)",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno='1e' AND pgno>=1",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux pgno='1e'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema pgno='1e'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE pgno='1e'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "rowid='1e'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "'1e'=rowid",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid IN ('1e',NULL)",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid='1e' AND rowid>=1",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux rowid='1e'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema rowid='1e'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE rowid='1e'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "pgno IN ('1e',1.5,2,2,NULL)",
+      "actual": "[1,1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN ('NaN',1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN ('Inf',1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno=x'31'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "x'31'=pgno",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno IN (x'31',NULL)",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno=x'31' AND pgno>=1",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux pgno=x'31'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema pgno=x'31'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE pgno=x'31'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "rowid=x'31'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "x'31'=rowid",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid IN (x'31',NULL)",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid=x'31' AND rowid>=1",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux rowid=x'31'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema rowid=x'31'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE rowid=x'31'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "pgno IN (x'31',1.5,2,2,NULL)",
+      "actual": "[1,1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno=x'312e30'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "x'312e30'=pgno",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno IN (x'312e30',NULL)",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno=x'312e30' AND pgno>=1",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux pgno=x'312e30'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema pgno=x'312e30'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE pgno=x'312e30'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "rowid=x'312e30'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "x'312e30'=rowid",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid IN (x'312e30',NULL)",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid=x'312e30' AND rowid>=1",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux rowid=x'312e30'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema rowid=x'312e30'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE rowid=x'312e30'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "pgno IN (x'312e30',1.5,2,2,NULL)",
+      "actual": "[1,1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN (x'',1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno='1\\n'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "'1\\n'=pgno",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno IN ('1\\n',NULL)",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno='1\\n' AND pgno>=1",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux pgno='1\\n'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema pgno='1\\n'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE pgno='1\\n'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "rowid='1\\n'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "'1\\n'=rowid",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid IN ('1\\n',NULL)",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid='1\\n' AND rowid>=1",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux rowid='1\\n'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema rowid='1\\n'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE rowid='1\\n'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "pgno IN ('1\\n',1.5,2,2,NULL)",
+      "actual": "[1,1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN ('1'||char(10),1.5,2,2,NULL)",
+      "actual": "[1,1,2]",
+      "expected": "[1,2]"
+    },
+    {
+      "case": "pgno IN (1e100,1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN (-1e100,1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN (1e-100,1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno=1.9999999999999998",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "1.9999999999999998=pgno",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno IN (1.9999999999999998,NULL)",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno=1.9999999999999998 AND pgno>=1",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux pgno=1.9999999999999998",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema pgno=1.9999999999999998",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE pgno=1.9999999999999998",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "rowid=1.9999999999999998",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "1.9999999999999998=rowid",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid IN (1.9999999999999998,NULL)",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid=1.9999999999999998 AND rowid>=1",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux rowid=1.9999999999999998",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema rowid=1.9999999999999998",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE rowid=1.9999999999999998",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "pgno IN (1.9999999999999998,1.5,2,2,NULL)",
+      "actual": "[1,1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno=2.0000000000000004",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "2.0000000000000004=pgno",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno IN (2.0000000000000004,NULL)",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno=2.0000000000000004 AND pgno>=1",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux pgno=2.0000000000000004",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema pgno=2.0000000000000004",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE pgno=2.0000000000000004",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "rowid=2.0000000000000004",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "2.0000000000000004=rowid",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid IN (2.0000000000000004,NULL)",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid=2.0000000000000004 AND rowid>=1",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux rowid=2.0000000000000004",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema rowid=2.0000000000000004",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE rowid=2.0000000000000004",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "pgno IN (2.0000000000000004,1.5,2,2,NULL)",
+      "actual": "[1,2,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno=3.0000000000000004",
+      "actual": "[3]",
+      "expected": "[]"
+    },
+    {
+      "case": "3.0000000000000004=pgno",
+      "actual": "[3]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno IN (3.0000000000000004,NULL)",
+      "actual": "[3]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno=3.0000000000000004 AND pgno>=1",
+      "actual": "[3]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema pgno=3.0000000000000004",
+      "actual": "[3]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE pgno=3.0000000000000004",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "rowid=3.0000000000000004",
+      "actual": "[3]",
+      "expected": "[]"
+    },
+    {
+      "case": "3.0000000000000004=rowid",
+      "actual": "[3]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid IN (3.0000000000000004,NULL)",
+      "actual": "[3]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid=3.0000000000000004 AND rowid>=1",
+      "actual": "[3]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema rowid=3.0000000000000004",
+      "actual": "[3]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE rowid=3.0000000000000004",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "pgno IN (3.0000000000000004,1.5,2,2,NULL)",
+      "actual": "[1,2,3]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN (9223372036854775808,1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN (-9223372036854775808,1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN ('4294967297',1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN ('1.0000000000000001',1.5,2,2,NULL)",
+      "actual": "[1,1,2]",
+      "expected": "[1,2]"
+    },
+    {
+      "case": "pgno='2.000000000000001'",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "'2.000000000000001'=pgno",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno IN ('2.000000000000001',NULL)",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno='2.000000000000001' AND pgno>=1",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux pgno='2.000000000000001'",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema pgno='2.000000000000001'",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE pgno='2.000000000000001'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "rowid='2.000000000000001'",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "'2.000000000000001'=rowid",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid IN ('2.000000000000001',NULL)",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid='2.000000000000001' AND rowid>=1",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux rowid='2.000000000000001'",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema rowid='2.000000000000001'",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE rowid='2.000000000000001'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "pgno IN ('2.000000000000001',1.5,2,2,NULL)",
+      "actual": "[1,2,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN ('1',1.5,2,2,NULL)",
+      "actual": "[1,1,2]",
+      "expected": "[1,2]"
+    },
+    {
+      "case": "pgno IN ('1.0',1.5,2,2,NULL)",
+      "actual": "[1,1,2]",
+      "expected": "[1,2]"
+    },
+    {
+      "case": "pgno='10e-1'",
+      "actual": "[10]",
+      "expected": "[1]"
+    },
+    {
+      "case": "'10e-1'=pgno",
+      "actual": "[10]",
+      "expected": "[1]"
+    },
+    {
+      "case": "pgno='10e-1' AND pgno>=1",
+      "actual": "[10]",
+      "expected": "[1]"
+    },
+    {
+      "case": "aux pgno='10e-1'",
+      "actual": "[]",
+      "expected": "[1]"
+    },
+    {
+      "case": "schema pgno='10e-1'",
+      "actual": "[10]",
+      "expected": "[1]"
+    },
+    {
+      "case": "rowid='10e-1'",
+      "actual": "[10]",
+      "expected": "[1]"
+    },
+    {
+      "case": "'10e-1'=rowid",
+      "actual": "[10]",
+      "expected": "[1]"
+    },
+    {
+      "case": "rowid='10e-1' AND rowid>=1",
+      "actual": "[10]",
+      "expected": "[1]"
+    },
+    {
+      "case": "aux rowid='10e-1'",
+      "actual": "[]",
+      "expected": "[1]"
+    },
+    {
+      "case": "schema rowid='10e-1'",
+      "actual": "[10]",
+      "expected": "[1]"
+    },
+    {
+      "case": "pgno IN ('10e-1',1.5,2,2,NULL)",
+      "actual": "[1,1,2]",
+      "expected": "[1,2]"
+    },
+    {
+      "case": "pgno='1x'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "'1x'=pgno",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno IN ('1x',NULL)",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno='1x' AND pgno>=1",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux pgno='1x'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema pgno='1x'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE pgno='1x'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "rowid='1x'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "'1x'=rowid",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid IN ('1x',NULL)",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid='1x' AND rowid>=1",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux rowid='1x'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema rowid='1x'",
+      "actual": "[1]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE rowid='1x'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "pgno IN ('1x',1.5,2,2,NULL)",
+      "actual": "[1,1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno='2x'",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "'2x'=pgno",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno IN ('2x',NULL)",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno='2x' AND pgno>=1",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux pgno='2x'",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema pgno='2x'",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE pgno='2x'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "rowid='2x'",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "'2x'=rowid",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid IN ('2x',NULL)",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid='2x' AND rowid>=1",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "aux rowid='2x'",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema rowid='2x'",
+      "actual": "[2]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE rowid='2x'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "pgno IN ('2x',1.5,2,2,NULL)",
+      "actual": "[1,2,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN (3,1.5,2,2,NULL)",
+      "actual": "[1,2,3]",
+      "expected": "[2,3]"
+    },
+    {
+      "case": "pgno IN ('3',1.5,2,2,NULL)",
+      "actual": "[1,2,3]",
+      "expected": "[2,3]"
+    },
+    {
+      "case": "pgno IN ('3.0',1.5,2,2,NULL)",
+      "actual": "[1,2,3]",
+      "expected": "[2,3]"
+    },
+    {
+      "case": "pgno='0.3e1'",
+      "actual": "[]",
+      "expected": "[3]"
+    },
+    {
+      "case": "'0.3e1'=pgno",
+      "actual": "[]",
+      "expected": "[3]"
+    },
+    {
+      "case": "pgno='0.3e1' AND pgno>=1",
+      "actual": "[]",
+      "expected": "[3]"
+    },
+    {
+      "case": "schema pgno='0.3e1'",
+      "actual": "[]",
+      "expected": "[3]"
+    },
+    {
+      "case": "UPDATE pgno='0.3e1'",
+      "actual": "0",
+      "expected": "1"
+    },
+    {
+      "case": "rowid='0.3e1'",
+      "actual": "[]",
+      "expected": "[3]"
+    },
+    {
+      "case": "'0.3e1'=rowid",
+      "actual": "[]",
+      "expected": "[3]"
+    },
+    {
+      "case": "rowid='0.3e1' AND rowid>=1",
+      "actual": "[]",
+      "expected": "[3]"
+    },
+    {
+      "case": "schema rowid='0.3e1'",
+      "actual": "[]",
+      "expected": "[3]"
+    },
+    {
+      "case": "UPDATE rowid='0.3e1'",
+      "actual": "0",
+      "expected": "1"
+    },
+    {
+      "case": "pgno IN ('0.3e1',1.5,2,2,NULL)",
+      "actual": "[1,2,3]",
+      "expected": "[2,3]"
+    },
+    {
+      "case": "pgno='3x'",
+      "actual": "[3]",
+      "expected": "[]"
+    },
+    {
+      "case": "'3x'=pgno",
+      "actual": "[3]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno IN ('3x',NULL)",
+      "actual": "[3]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno='3x' AND pgno>=1",
+      "actual": "[3]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema pgno='3x'",
+      "actual": "[3]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE pgno='3x'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "rowid='3x'",
+      "actual": "[3]",
+      "expected": "[]"
+    },
+    {
+      "case": "'3x'=rowid",
+      "actual": "[3]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid IN ('3x',NULL)",
+      "actual": "[3]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid='3x' AND rowid>=1",
+      "actual": "[3]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema rowid='3x'",
+      "actual": "[3]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE rowid='3x'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "pgno IN ('3x',1.5,2,2,NULL)",
+      "actual": "[1,2,3]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno=3.5",
+      "actual": "[3]",
+      "expected": "[]"
+    },
+    {
+      "case": "3.5=pgno",
+      "actual": "[3]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno IN (3.5,NULL)",
+      "actual": "[3]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno=3.5 AND pgno>=1",
+      "actual": "[3]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema pgno=3.5",
+      "actual": "[3]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE pgno=3.5",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "rowid=3.5",
+      "actual": "[3]",
+      "expected": "[]"
+    },
+    {
+      "case": "3.5=rowid",
+      "actual": "[3]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid IN (3.5,NULL)",
+      "actual": "[3]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid=3.5 AND rowid>=1",
+      "actual": "[3]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema rowid=3.5",
+      "actual": "[3]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE rowid=3.5",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "pgno IN (3.5,1.5,2,2,NULL)",
+      "actual": "[1,2,3]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN (9,1.5,2,2,NULL)",
+      "actual": "[1,2,9]",
+      "expected": "[2,9]"
+    },
+    {
+      "case": "pgno IN ('9',1.5,2,2,NULL)",
+      "actual": "[1,2,9]",
+      "expected": "[2,9]"
+    },
+    {
+      "case": "pgno IN ('9.0',1.5,2,2,NULL)",
+      "actual": "[1,2,9]",
+      "expected": "[2,9]"
+    },
+    {
+      "case": "pgno='90e-1'",
+      "actual": "[]",
+      "expected": "[9]"
+    },
+    {
+      "case": "'90e-1'=pgno",
+      "actual": "[]",
+      "expected": "[9]"
+    },
+    {
+      "case": "pgno='90e-1' AND pgno>=1",
+      "actual": "[]",
+      "expected": "[9]"
+    },
+    {
+      "case": "schema pgno='90e-1'",
+      "actual": "[]",
+      "expected": "[9]"
+    },
+    {
+      "case": "UPDATE pgno='90e-1'",
+      "actual": "0",
+      "expected": "1"
+    },
+    {
+      "case": "rowid='90e-1'",
+      "actual": "[]",
+      "expected": "[9]"
+    },
+    {
+      "case": "'90e-1'=rowid",
+      "actual": "[]",
+      "expected": "[9]"
+    },
+    {
+      "case": "rowid='90e-1' AND rowid>=1",
+      "actual": "[]",
+      "expected": "[9]"
+    },
+    {
+      "case": "schema rowid='90e-1'",
+      "actual": "[]",
+      "expected": "[9]"
+    },
+    {
+      "case": "UPDATE rowid='90e-1'",
+      "actual": "0",
+      "expected": "1"
+    },
+    {
+      "case": "pgno IN ('90e-1',1.5,2,2,NULL)",
+      "actual": "[1,2,9]",
+      "expected": "[2,9]"
+    },
+    {
+      "case": "pgno='0.9e1'",
+      "actual": "[]",
+      "expected": "[9]"
+    },
+    {
+      "case": "'0.9e1'=pgno",
+      "actual": "[]",
+      "expected": "[9]"
+    },
+    {
+      "case": "pgno='0.9e1' AND pgno>=1",
+      "actual": "[]",
+      "expected": "[9]"
+    },
+    {
+      "case": "schema pgno='0.9e1'",
+      "actual": "[]",
+      "expected": "[9]"
+    },
+    {
+      "case": "UPDATE pgno='0.9e1'",
+      "actual": "0",
+      "expected": "1"
+    },
+    {
+      "case": "rowid='0.9e1'",
+      "actual": "[]",
+      "expected": "[9]"
+    },
+    {
+      "case": "'0.9e1'=rowid",
+      "actual": "[]",
+      "expected": "[9]"
+    },
+    {
+      "case": "rowid='0.9e1' AND rowid>=1",
+      "actual": "[]",
+      "expected": "[9]"
+    },
+    {
+      "case": "schema rowid='0.9e1'",
+      "actual": "[]",
+      "expected": "[9]"
+    },
+    {
+      "case": "UPDATE rowid='0.9e1'",
+      "actual": "0",
+      "expected": "1"
+    },
+    {
+      "case": "pgno IN ('0.9e1',1.5,2,2,NULL)",
+      "actual": "[1,2,9]",
+      "expected": "[2,9]"
+    },
+    {
+      "case": "pgno='9x'",
+      "actual": "[9]",
+      "expected": "[]"
+    },
+    {
+      "case": "'9x'=pgno",
+      "actual": "[9]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno IN ('9x',NULL)",
+      "actual": "[9]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno='9x' AND pgno>=1",
+      "actual": "[9]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema pgno='9x'",
+      "actual": "[9]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE pgno='9x'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "rowid='9x'",
+      "actual": "[9]",
+      "expected": "[]"
+    },
+    {
+      "case": "'9x'=rowid",
+      "actual": "[9]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid IN ('9x',NULL)",
+      "actual": "[9]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid='9x' AND rowid>=1",
+      "actual": "[9]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema rowid='9x'",
+      "actual": "[9]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE rowid='9x'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "pgno IN ('9x',1.5,2,2,NULL)",
+      "actual": "[1,2,9]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno=9.5",
+      "actual": "[9]",
+      "expected": "[]"
+    },
+    {
+      "case": "9.5=pgno",
+      "actual": "[9]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno IN (9.5,NULL)",
+      "actual": "[9]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno=9.5 AND pgno>=1",
+      "actual": "[9]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema pgno=9.5",
+      "actual": "[9]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE pgno=9.5",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "rowid=9.5",
+      "actual": "[9]",
+      "expected": "[]"
+    },
+    {
+      "case": "9.5=rowid",
+      "actual": "[9]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid IN (9.5,NULL)",
+      "actual": "[9]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid=9.5 AND rowid>=1",
+      "actual": "[9]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema rowid=9.5",
+      "actual": "[9]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE rowid=9.5",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "pgno IN (9.5,1.5,2,2,NULL)",
+      "actual": "[1,2,9]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN (20,1.5,2,2,NULL)",
+      "actual": "[1,2,20]",
+      "expected": "[2,20]"
+    },
+    {
+      "case": "pgno IN ('20',1.5,2,2,NULL)",
+      "actual": "[1,2,20]",
+      "expected": "[2,20]"
+    },
+    {
+      "case": "pgno IN ('20.0',1.5,2,2,NULL)",
+      "actual": "[1,2,20]",
+      "expected": "[2,20]"
+    },
+    {
+      "case": "pgno='200e-1'",
+      "actual": "[]",
+      "expected": "[20]"
+    },
+    {
+      "case": "'200e-1'=pgno",
+      "actual": "[]",
+      "expected": "[20]"
+    },
+    {
+      "case": "pgno='200e-1' AND pgno>=1",
+      "actual": "[]",
+      "expected": "[20]"
+    },
+    {
+      "case": "schema pgno='200e-1'",
+      "actual": "[]",
+      "expected": "[20]"
+    },
+    {
+      "case": "UPDATE pgno='200e-1'",
+      "actual": "0",
+      "expected": "1"
+    },
+    {
+      "case": "rowid='200e-1'",
+      "actual": "[]",
+      "expected": "[20]"
+    },
+    {
+      "case": "'200e-1'=rowid",
+      "actual": "[]",
+      "expected": "[20]"
+    },
+    {
+      "case": "rowid='200e-1' AND rowid>=1",
+      "actual": "[]",
+      "expected": "[20]"
+    },
+    {
+      "case": "schema rowid='200e-1'",
+      "actual": "[]",
+      "expected": "[20]"
+    },
+    {
+      "case": "UPDATE rowid='200e-1'",
+      "actual": "0",
+      "expected": "1"
+    },
+    {
+      "case": "pgno IN ('200e-1',1.5,2,2,NULL)",
+      "actual": "[1,2,20]",
+      "expected": "[2,20]"
+    },
+    {
+      "case": "pgno='0.20e2'",
+      "actual": "[]",
+      "expected": "[20]"
+    },
+    {
+      "case": "'0.20e2'=pgno",
+      "actual": "[]",
+      "expected": "[20]"
+    },
+    {
+      "case": "pgno='0.20e2' AND pgno>=1",
+      "actual": "[]",
+      "expected": "[20]"
+    },
+    {
+      "case": "schema pgno='0.20e2'",
+      "actual": "[]",
+      "expected": "[20]"
+    },
+    {
+      "case": "UPDATE pgno='0.20e2'",
+      "actual": "0",
+      "expected": "1"
+    },
+    {
+      "case": "rowid='0.20e2'",
+      "actual": "[]",
+      "expected": "[20]"
+    },
+    {
+      "case": "'0.20e2'=rowid",
+      "actual": "[]",
+      "expected": "[20]"
+    },
+    {
+      "case": "rowid='0.20e2' AND rowid>=1",
+      "actual": "[]",
+      "expected": "[20]"
+    },
+    {
+      "case": "schema rowid='0.20e2'",
+      "actual": "[]",
+      "expected": "[20]"
+    },
+    {
+      "case": "UPDATE rowid='0.20e2'",
+      "actual": "0",
+      "expected": "1"
+    },
+    {
+      "case": "pgno IN ('0.20e2',1.5,2,2,NULL)",
+      "actual": "[1,2,20]",
+      "expected": "[2,20]"
+    },
+    {
+      "case": "pgno='20x'",
+      "actual": "[20]",
+      "expected": "[]"
+    },
+    {
+      "case": "'20x'=pgno",
+      "actual": "[20]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno IN ('20x',NULL)",
+      "actual": "[20]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno='20x' AND pgno>=1",
+      "actual": "[20]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema pgno='20x'",
+      "actual": "[20]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE pgno='20x'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "rowid='20x'",
+      "actual": "[20]",
+      "expected": "[]"
+    },
+    {
+      "case": "'20x'=rowid",
+      "actual": "[20]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid IN ('20x',NULL)",
+      "actual": "[20]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid='20x' AND rowid>=1",
+      "actual": "[20]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema rowid='20x'",
+      "actual": "[20]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE rowid='20x'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "pgno IN ('20x',1.5,2,2,NULL)",
+      "actual": "[1,2,20]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno=20.5",
+      "actual": "[20]",
+      "expected": "[]"
+    },
+    {
+      "case": "20.5=pgno",
+      "actual": "[20]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno IN (20.5,NULL)",
+      "actual": "[20]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno=20.5 AND pgno>=1",
+      "actual": "[20]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema pgno=20.5",
+      "actual": "[20]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE pgno=20.5",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "rowid=20.5",
+      "actual": "[20]",
+      "expected": "[]"
+    },
+    {
+      "case": "20.5=rowid",
+      "actual": "[20]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid IN (20.5,NULL)",
+      "actual": "[20]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid=20.5 AND rowid>=1",
+      "actual": "[20]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema rowid=20.5",
+      "actual": "[20]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE rowid=20.5",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "pgno IN (20.5,1.5,2,2,NULL)",
+      "actual": "[1,2,20]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN (40,1.5,2,2,NULL)",
+      "actual": "[1,2,40]",
+      "expected": "[2,40]"
+    },
+    {
+      "case": "pgno IN ('40',1.5,2,2,NULL)",
+      "actual": "[1,2,40]",
+      "expected": "[2,40]"
+    },
+    {
+      "case": "pgno IN ('40.0',1.5,2,2,NULL)",
+      "actual": "[1,2,40]",
+      "expected": "[2,40]"
+    },
+    {
+      "case": "pgno='400e-1'",
+      "actual": "[]",
+      "expected": "[40]"
+    },
+    {
+      "case": "'400e-1'=pgno",
+      "actual": "[]",
+      "expected": "[40]"
+    },
+    {
+      "case": "pgno='400e-1' AND pgno>=1",
+      "actual": "[]",
+      "expected": "[40]"
+    },
+    {
+      "case": "schema pgno='400e-1'",
+      "actual": "[]",
+      "expected": "[40]"
+    },
+    {
+      "case": "UPDATE pgno='400e-1'",
+      "actual": "0",
+      "expected": "1"
+    },
+    {
+      "case": "rowid='400e-1'",
+      "actual": "[]",
+      "expected": "[40]"
+    },
+    {
+      "case": "'400e-1'=rowid",
+      "actual": "[]",
+      "expected": "[40]"
+    },
+    {
+      "case": "rowid='400e-1' AND rowid>=1",
+      "actual": "[]",
+      "expected": "[40]"
+    },
+    {
+      "case": "schema rowid='400e-1'",
+      "actual": "[]",
+      "expected": "[40]"
+    },
+    {
+      "case": "UPDATE rowid='400e-1'",
+      "actual": "0",
+      "expected": "1"
+    },
+    {
+      "case": "pgno IN ('400e-1',1.5,2,2,NULL)",
+      "actual": "[1,2,40]",
+      "expected": "[2,40]"
+    },
+    {
+      "case": "pgno='0.40e2'",
+      "actual": "[]",
+      "expected": "[40]"
+    },
+    {
+      "case": "'0.40e2'=pgno",
+      "actual": "[]",
+      "expected": "[40]"
+    },
+    {
+      "case": "pgno='0.40e2' AND pgno>=1",
+      "actual": "[]",
+      "expected": "[40]"
+    },
+    {
+      "case": "schema pgno='0.40e2'",
+      "actual": "[]",
+      "expected": "[40]"
+    },
+    {
+      "case": "UPDATE pgno='0.40e2'",
+      "actual": "0",
+      "expected": "1"
+    },
+    {
+      "case": "rowid='0.40e2'",
+      "actual": "[]",
+      "expected": "[40]"
+    },
+    {
+      "case": "'0.40e2'=rowid",
+      "actual": "[]",
+      "expected": "[40]"
+    },
+    {
+      "case": "rowid='0.40e2' AND rowid>=1",
+      "actual": "[]",
+      "expected": "[40]"
+    },
+    {
+      "case": "schema rowid='0.40e2'",
+      "actual": "[]",
+      "expected": "[40]"
+    },
+    {
+      "case": "UPDATE rowid='0.40e2'",
+      "actual": "0",
+      "expected": "1"
+    },
+    {
+      "case": "pgno IN ('0.40e2',1.5,2,2,NULL)",
+      "actual": "[1,2,40]",
+      "expected": "[2,40]"
+    },
+    {
+      "case": "pgno='40x'",
+      "actual": "[40]",
+      "expected": "[]"
+    },
+    {
+      "case": "'40x'=pgno",
+      "actual": "[40]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno IN ('40x',NULL)",
+      "actual": "[40]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno='40x' AND pgno>=1",
+      "actual": "[40]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema pgno='40x'",
+      "actual": "[40]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE pgno='40x'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "rowid='40x'",
+      "actual": "[40]",
+      "expected": "[]"
+    },
+    {
+      "case": "'40x'=rowid",
+      "actual": "[40]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid IN ('40x',NULL)",
+      "actual": "[40]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid='40x' AND rowid>=1",
+      "actual": "[40]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema rowid='40x'",
+      "actual": "[40]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE rowid='40x'",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "pgno IN ('40x',1.5,2,2,NULL)",
+      "actual": "[1,2,40]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno=40.5",
+      "actual": "[40]",
+      "expected": "[]"
+    },
+    {
+      "case": "40.5=pgno",
+      "actual": "[40]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno IN (40.5,NULL)",
+      "actual": "[40]",
+      "expected": "[]"
+    },
+    {
+      "case": "pgno=40.5 AND pgno>=1",
+      "actual": "[40]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema pgno=40.5",
+      "actual": "[40]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE pgno=40.5",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "rowid=40.5",
+      "actual": "[40]",
+      "expected": "[]"
+    },
+    {
+      "case": "40.5=rowid",
+      "actual": "[40]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid IN (40.5,NULL)",
+      "actual": "[40]",
+      "expected": "[]"
+    },
+    {
+      "case": "rowid=40.5 AND rowid>=1",
+      "actual": "[40]",
+      "expected": "[]"
+    },
+    {
+      "case": "schema rowid=40.5",
+      "actual": "[40]",
+      "expected": "[]"
+    },
+    {
+      "case": "UPDATE rowid=40.5",
+      "actual": "1",
+      "expected": "0"
+    },
+    {
+      "case": "pgno IN (40.5,1.5,2,2,NULL)",
+      "actual": "[1,2,40]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN (100,1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN ('100',1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN ('100.0',1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN ('1000e-1',1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN ('0.100e3',1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN ('100x',1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "pgno IN (100.5,1.5,2,2,NULL)",
+      "actual": "[1,2]",
+      "expected": "[2]"
+    },
+    {
+      "case": "TEXT CROSS JOIN pgno",
+      "actual": "[[0,1],[1,2],[2,1],[3,2],[4,1],[5,2],[6,2],[7,2],[8,2],[9,2],[10,2],[12,2],[13,20],[14,1],[15,1],[21,2],[22,2],[23,2],[26,2],[27,2],[29,30],[30,3],[31,3],[32,3],[33,1],[34,1],[35,1],[36,1],[39,1],[40,1],[42,1],[43,1],[44,1],[46,1],[47,1],[48,2],[49,3],[50,9],[53,1],[54,2],[55,1],[56,1],[57,10],[58,1],[59,2],[60,3],[61,3],[62,3],[64,3],[65,3],[66,9],[67,9],[68,9],[71,9],[72,9],[73,20],[74,20],[75,20],[78,20],[79,20],[80,40],[81,40],[82,40],[85,40],[86,40]]",
+      "expected": "[[0,1],[1,2],[2,1],[3,2],[8,2],[9,2],[10,2],[11,2],[12,20],[13,2],[14,10],[21,2],[22,2],[23,2],[26,2],[27,2],[28,1],[29,3],[30,30],[31,30],[32,31],[43,1],[53,1],[55,1],[56,1],[57,1],[60,3],[61,3],[62,3],[63,3],[66,9],[67,9],[68,9],[69,9],[70,9],[73,20],[74,20],[75,20],[76,20],[77,20],[80,40],[81,40],[82,40],[83,40],[84,40]]"
+    },
+    {
+      "case": "TEXT LEFT JOIN pgno",
+      "actual": "[[0,1],[1,2],[2,1],[3,2],[4,1],[5,2],[6,2],[7,2],[8,2],[9,2],[10,2],[11,null],[12,2],[13,20],[14,1],[15,1],[16,null],[17,null],[18,null],[19,null],[20,null],[21,2],[22,2],[23,2],[24,null],[25,null],[26,2],[27,2],[28,null],[29,30],[30,3],[31,3],[32,3],[33,1],[34,1],[35,1],[36,1],[37,null],[38,null],[39,1],[40,1],[41,null],[42,1],[43,1],[44,1],[45,null],[46,1],[47,1],[48,2],[49,3],[50,9],[51,null],[52,null],[53,1],[54,2],[55,1],[56,1],[57,10],[58,1],[59,2],[60,3],[61,3],[62,3],[63,null],[64,3],[65,3],[66,9],[67,9],[68,9],[69,null],[70,null],[71,9],[72,9],[73,20],[74,20],[75,20],[76,null],[77,null],[78,20],[79,20],[80,40],[81,40],[82,40],[83,null],[84,null],[85,40],[86,40],[87,null],[88,null],[89,null],[90,null],[91,null],[92,null],[93,null]]",
+      "expected": "[[0,1],[1,2],[2,1],[3,2],[4,null],[5,null],[6,null],[7,null],[8,2],[9,2],[10,2],[11,2],[12,20],[13,2],[14,10],[15,null],[16,null],[17,null],[18,null],[19,null],[20,null],[21,2],[22,2],[23,2],[24,null],[25,null],[26,2],[27,2],[28,1],[29,3],[30,30],[31,30],[32,31],[33,null],[34,null],[35,null],[36,null],[37,null],[38,null],[39,null],[40,null],[41,null],[42,null],[43,1],[44,null],[45,null],[46,null],[47,null],[48,null],[49,null],[50,null],[51,null],[52,null],[53,1],[54,null],[55,1],[56,1],[57,1],[58,null],[59,null],[60,3],[61,3],[62,3],[63,3],[64,null],[65,null],[66,9],[67,9],[68,9],[69,9],[70,9],[71,null],[72,null],[73,20],[74,20],[75,20],[76,20],[77,20],[78,null],[79,null],[80,40],[81,40],[82,40],[83,40],[84,40],[85,null],[86,null],[87,null],[88,null],[89,null],[90,null],[91,null],[92,null],[93,null]]"
+    },
+    {
+      "case": "TEXT CROSS JOIN rowid",
+      "actual": "[[0,1],[1,2],[2,1],[3,2],[4,1],[5,2],[6,2],[7,2],[8,2],[9,2],[10,2],[12,2],[13,20],[14,1],[15,1],[21,2],[22,2],[23,2],[26,2],[27,2],[29,30],[30,3],[31,3],[32,3],[33,1],[34,1],[35,1],[36,1],[39,1],[40,1],[42,1],[43,1],[44,1],[46,1],[47,1],[48,2],[49,3],[50,9],[53,1],[54,2],[55,1],[56,1],[57,10],[58,1],[59,2],[60,3],[61,3],[62,3],[64,3],[65,3],[66,9],[67,9],[68,9],[71,9],[72,9],[73,20],[74,20],[75,20],[78,20],[79,20],[80,40],[81,40],[82,40],[85,40],[86,40]]",
+      "expected": "[[0,1],[1,2],[2,1],[3,2],[8,2],[9,2],[10,2],[11,2],[12,20],[13,2],[14,10],[21,2],[22,2],[23,2],[26,2],[27,2],[28,1],[29,3],[30,30],[31,30],[32,31],[43,1],[53,1],[55,1],[56,1],[57,1],[60,3],[61,3],[62,3],[63,3],[66,9],[67,9],[68,9],[69,9],[70,9],[73,20],[74,20],[75,20],[76,20],[77,20],[80,40],[81,40],[82,40],[83,40],[84,40]]"
+    },
+    {
+      "case": "TEXT LEFT JOIN rowid",
+      "actual": "[[0,1],[1,2],[2,1],[3,2],[4,1],[5,2],[6,2],[7,2],[8,2],[9,2],[10,2],[11,null],[12,2],[13,20],[14,1],[15,1],[16,null],[17,null],[18,null],[19,null],[20,null],[21,2],[22,2],[23,2],[24,null],[25,null],[26,2],[27,2],[28,null],[29,30],[30,3],[31,3],[32,3],[33,1],[34,1],[35,1],[36,1],[37,null],[38,null],[39,1],[40,1],[41,null],[42,1],[43,1],[44,1],[45,null],[46,1],[47,1],[48,2],[49,3],[50,9],[51,null],[52,null],[53,1],[54,2],[55,1],[56,1],[57,10],[58,1],[59,2],[60,3],[61,3],[62,3],[63,null],[64,3],[65,3],[66,9],[67,9],[68,9],[69,null],[70,null],[71,9],[72,9],[73,20],[74,20],[75,20],[76,null],[77,null],[78,20],[79,20],[80,40],[81,40],[82,40],[83,null],[84,null],[85,40],[86,40],[87,null],[88,null],[89,null],[90,null],[91,null],[92,null],[93,null]]",
+      "expected": "[[0,1],[1,2],[2,1],[3,2],[4,null],[5,null],[6,null],[7,null],[8,2],[9,2],[10,2],[11,2],[12,20],[13,2],[14,10],[15,null],[16,null],[17,null],[18,null],[19,null],[20,null],[21,2],[22,2],[23,2],[24,null],[25,null],[26,2],[27,2],[28,1],[29,3],[30,30],[31,30],[32,31],[33,null],[34,null],[35,null],[36,null],[37,null],[38,null],[39,null],[40,null],[41,null],[42,null],[43,1],[44,null],[45,null],[46,null],[47,null],[48,null],[49,null],[50,null],[51,null],[52,null],[53,1],[54,null],[55,1],[56,1],[57,1],[58,null],[59,null],[60,3],[61,3],[62,3],[63,3],[64,null],[65,null],[66,9],[67,9],[68,9],[69,9],[70,9],[71,null],[72,null],[73,20],[74,20],[75,20],[76,20],[77,20],[78,null],[79,null],[80,40],[81,40],[82,40],[83,40],[84,40],[85,null],[86,null],[87,null],[88,null],[89,null],[90,null],[91,null],[92,null],[93,null]]"
+    },
+    {
+      "case": "NUMERIC CROSS JOIN pgno",
+      "actual": "[[0,1],[1,2],[2,1],[3,2],[4,1],[5,2],[6,2],[7,2],[8,2],[9,2],[10,2],[11,2],[12,20],[13,2],[14,10],[15,1],[21,2],[22,2],[23,2],[26,2],[27,2],[28,1],[29,3],[30,30],[31,30],[32,31],[35,1],[36,1],[39,1],[40,1],[42,1],[43,1],[47,1],[48,2],[49,3],[53,1],[54,2],[55,1],[56,1],[57,1],[58,1],[59,2],[60,3],[61,3],[62,3],[63,3],[64,3],[65,3],[66,9],[67,9],[68,9],[69,9],[70,9],[71,9],[72,9],[73,20],[74,20],[75,20],[76,20],[77,20],[78,20],[79,20],[80,40],[81,40],[82,40],[83,40],[84,40],[85,40],[86,40]]",
+      "expected": "[[0,1],[1,2],[2,1],[3,2],[8,2],[9,2],[10,2],[11,2],[12,20],[13,2],[14,10],[21,2],[22,2],[23,2],[26,2],[27,2],[28,1],[29,3],[30,30],[31,30],[32,31],[43,1],[53,1],[55,1],[56,1],[57,1],[60,3],[61,3],[62,3],[63,3],[66,9],[67,9],[68,9],[69,9],[70,9],[73,20],[74,20],[75,20],[76,20],[77,20],[80,40],[81,40],[82,40],[83,40],[84,40]]"
+    },
+    {
+      "case": "NUMERIC LEFT JOIN pgno",
+      "actual": "[[0,1],[1,2],[2,1],[3,2],[4,1],[5,2],[6,2],[7,2],[8,2],[9,2],[10,2],[11,2],[12,20],[13,2],[14,10],[15,1],[16,null],[17,null],[18,null],[19,null],[20,null],[21,2],[22,2],[23,2],[24,null],[25,null],[26,2],[27,2],[28,1],[29,3],[30,30],[31,30],[32,31],[33,null],[34,null],[35,1],[36,1],[37,null],[38,null],[39,1],[40,1],[41,null],[42,1],[43,1],[44,null],[45,null],[46,null],[47,1],[48,2],[49,3],[50,null],[51,null],[52,null],[53,1],[54,2],[55,1],[56,1],[57,1],[58,1],[59,2],[60,3],[61,3],[62,3],[63,3],[64,3],[65,3],[66,9],[67,9],[68,9],[69,9],[70,9],[71,9],[72,9],[73,20],[74,20],[75,20],[76,20],[77,20],[78,20],[79,20],[80,40],[81,40],[82,40],[83,40],[84,40],[85,40],[86,40],[87,null],[88,null],[89,null],[90,null],[91,null],[92,null],[93,null]]",
+      "expected": "[[0,1],[1,2],[2,1],[3,2],[4,null],[5,null],[6,null],[7,null],[8,2],[9,2],[10,2],[11,2],[12,20],[13,2],[14,10],[15,null],[16,null],[17,null],[18,null],[19,null],[20,null],[21,2],[22,2],[23,2],[24,null],[25,null],[26,2],[27,2],[28,1],[29,3],[30,30],[31,30],[32,31],[33,null],[34,null],[35,null],[36,null],[37,null],[38,null],[39,null],[40,null],[41,null],[42,null],[43,1],[44,null],[45,null],[46,null],[47,null],[48,null],[49,null],[50,null],[51,null],[52,null],[53,1],[54,null],[55,1],[56,1],[57,1],[58,null],[59,null],[60,3],[61,3],[62,3],[63,3],[64,null],[65,null],[66,9],[67,9],[68,9],[69,9],[70,9],[71,null],[72,null],[73,20],[74,20],[75,20],[76,20],[77,20],[78,null],[79,null],[80,40],[81,40],[82,40],[83,40],[84,40],[85,null],[86,null],[87,null],[88,null],[89,null],[90,null],[91,null],[92,null],[93,null]]"
+    },
+    {
+      "case": "NUMERIC CROSS JOIN rowid",
+      "actual": "[[0,1],[1,2],[2,1],[3,2],[4,1],[5,2],[6,2],[7,2],[8,2],[9,2],[10,2],[11,2],[12,20],[13,2],[14,10],[15,1],[21,2],[22,2],[23,2],[26,2],[27,2],[28,1],[29,3],[30,30],[31,30],[32,31],[35,1],[36,1],[39,1],[40,1],[42,1],[43,1],[47,1],[48,2],[49,3],[53,1],[54,2],[55,1],[56,1],[57,1],[58,1],[59,2],[60,3],[61,3],[62,3],[63,3],[64,3],[65,3],[66,9],[67,9],[68,9],[69,9],[70,9],[71,9],[72,9],[73,20],[74,20],[75,20],[76,20],[77,20],[78,20],[79,20],[80,40],[81,40],[82,40],[83,40],[84,40],[85,40],[86,40]]",
+      "expected": "[[0,1],[1,2],[2,1],[3,2],[8,2],[9,2],[10,2],[11,2],[12,20],[13,2],[14,10],[21,2],[22,2],[23,2],[26,2],[27,2],[28,1],[29,3],[30,30],[31,30],[32,31],[43,1],[53,1],[55,1],[56,1],[57,1],[60,3],[61,3],[62,3],[63,3],[66,9],[67,9],[68,9],[69,9],[70,9],[73,20],[74,20],[75,20],[76,20],[77,20],[80,40],[81,40],[82,40],[83,40],[84,40]]"
+    },
+    {
+      "case": "NUMERIC LEFT JOIN rowid",
+      "actual": "[[0,1],[1,2],[2,1],[3,2],[4,1],[5,2],[6,2],[7,2],[8,2],[9,2],[10,2],[11,2],[12,20],[13,2],[14,10],[15,1],[16,null],[17,null],[18,null],[19,null],[20,null],[21,2],[22,2],[23,2],[24,null],[25,null],[26,2],[27,2],[28,1],[29,3],[30,30],[31,30],[32,31],[33,null],[34,null],[35,1],[36,1],[37,null],[38,null],[39,1],[40,1],[41,null],[42,1],[43,1],[44,null],[45,null],[46,null],[47,1],[48,2],[49,3],[50,null],[51,null],[52,null],[53,1],[54,2],[55,1],[56,1],[57,1],[58,1],[59,2],[60,3],[61,3],[62,3],[63,3],[64,3],[65,3],[66,9],[67,9],[68,9],[69,9],[70,9],[71,9],[72,9],[73,20],[74,20],[75,20],[76,20],[77,20],[78,20],[79,20],[80,40],[81,40],[82,40],[83,40],[84,40],[85,40],[86,40],[87,null],[88,null],[89,null],[90,null],[91,null],[92,null],[93,null]]",
+      "expected": "[[0,1],[1,2],[2,1],[3,2],[4,null],[5,null],[6,null],[7,null],[8,2],[9,2],[10,2],[11,2],[12,20],[13,2],[14,10],[15,null],[16,null],[17,null],[18,null],[19,null],[20,null],[21,2],[22,2],[23,2],[24,null],[25,null],[26,2],[27,2],[28,1],[29,3],[30,30],[31,30],[32,31],[33,null],[34,null],[35,null],[36,null],[37,null],[38,null],[39,null],[40,null],[41,null],[42,null],[43,1],[44,null],[45,null],[46,null],[47,null],[48,null],[49,null],[50,null],[51,null],[52,null],[53,1],[54,null],[55,1],[56,1],[57,1],[58,null],[59,null],[60,3],[61,3],[62,3],[63,3],[64,null],[65,null],[66,9],[67,9],[68,9],[69,9],[70,9],[71,null],[72,null],[73,20],[74,20],[75,20],[76,20],[77,20],[78,null],[79,null],[80,40],[81,40],[82,40],[83,40],[84,40],[85,null],[86,null],[87,null],[88,null],[89,null],[90,null],[91,null],[92,null],[93,null]]"
+    },
+    {
+      "case": "BLOB CROSS JOIN pgno",
+      "actual": "[[0,1],[1,2],[2,1],[3,2],[4,1],[5,2],[6,2],[7,2],[8,2],[9,2],[10,2],[12,2],[13,20],[14,1],[15,1],[21,2],[22,2],[23,2],[26,2],[27,2],[29,30],[30,3],[31,3],[32,3],[33,1],[34,1],[35,1],[36,1],[39,1],[40,1],[42,1],[43,1],[47,1],[48,2],[49,3],[53,1],[54,2],[55,1],[56,1],[57,10],[58,1],[59,2],[60,3],[61,3],[62,3],[64,3],[65,3],[66,9],[67,9],[68,9],[71,9],[72,9],[73,20],[74,20],[75,20],[78,20],[79,20],[80,40],[81,40],[82,40],[85,40],[86,40]]",
+      "expected": "[[0,1],[1,2],[2,1],[3,2],[8,2],[9,2],[10,2],[11,2],[12,20],[13,2],[14,10],[21,2],[22,2],[23,2],[26,2],[27,2],[28,1],[29,3],[30,30],[31,30],[32,31],[43,1],[53,1],[55,1],[56,1],[57,1],[60,3],[61,3],[62,3],[63,3],[66,9],[67,9],[68,9],[69,9],[70,9],[73,20],[74,20],[75,20],[76,20],[77,20],[80,40],[81,40],[82,40],[83,40],[84,40]]"
+    },
+    {
+      "case": "BLOB LEFT JOIN pgno",
+      "actual": "[[0,1],[1,2],[2,1],[3,2],[4,1],[5,2],[6,2],[7,2],[8,2],[9,2],[10,2],[11,null],[12,2],[13,20],[14,1],[15,1],[16,null],[17,null],[18,null],[19,null],[20,null],[21,2],[22,2],[23,2],[24,null],[25,null],[26,2],[27,2],[28,null],[29,30],[30,3],[31,3],[32,3],[33,1],[34,1],[35,1],[36,1],[37,null],[38,null],[39,1],[40,1],[41,null],[42,1],[43,1],[44,null],[45,null],[46,null],[47,1],[48,2],[49,3],[50,null],[51,null],[52,null],[53,1],[54,2],[55,1],[56,1],[57,10],[58,1],[59,2],[60,3],[61,3],[62,3],[63,null],[64,3],[65,3],[66,9],[67,9],[68,9],[69,null],[70,null],[71,9],[72,9],[73,20],[74,20],[75,20],[76,null],[77,null],[78,20],[79,20],[80,40],[81,40],[82,40],[83,null],[84,null],[85,40],[86,40],[87,null],[88,null],[89,null],[90,null],[91,null],[92,null],[93,null]]",
+      "expected": "[[0,1],[1,2],[2,1],[3,2],[4,null],[5,null],[6,null],[7,null],[8,2],[9,2],[10,2],[11,2],[12,20],[13,2],[14,10],[15,null],[16,null],[17,null],[18,null],[19,null],[20,null],[21,2],[22,2],[23,2],[24,null],[25,null],[26,2],[27,2],[28,1],[29,3],[30,30],[31,30],[32,31],[33,null],[34,null],[35,null],[36,null],[37,null],[38,null],[39,null],[40,null],[41,null],[42,null],[43,1],[44,null],[45,null],[46,null],[47,null],[48,null],[49,null],[50,null],[51,null],[52,null],[53,1],[54,null],[55,1],[56,1],[57,1],[58,null],[59,null],[60,3],[61,3],[62,3],[63,3],[64,null],[65,null],[66,9],[67,9],[68,9],[69,9],[70,9],[71,null],[72,null],[73,20],[74,20],[75,20],[76,20],[77,20],[78,null],[79,null],[80,40],[81,40],[82,40],[83,40],[84,40],[85,null],[86,null],[87,null],[88,null],[89,null],[90,null],[91,null],[92,null],[93,null]]"
+    },
+    {
+      "case": "BLOB CROSS JOIN rowid",
+      "actual": "[[0,1],[1,2],[2,1],[3,2],[4,1],[5,2],[6,2],[7,2],[8,2],[9,2],[10,2],[12,2],[13,20],[14,1],[15,1],[21,2],[22,2],[23,2],[26,2],[27,2],[29,30],[30,3],[31,3],[32,3],[33,1],[34,1],[35,1],[36,1],[39,1],[40,1],[42,1],[43,1],[47,1],[48,2],[49,3],[53,1],[54,2],[55,1],[56,1],[57,10],[58,1],[59,2],[60,3],[61,3],[62,3],[64,3],[65,3],[66,9],[67,9],[68,9],[71,9],[72,9],[73,20],[74,20],[75,20],[78,20],[79,20],[80,40],[81,40],[82,40],[85,40],[86,40]]",
+      "expected": "[[0,1],[1,2],[2,1],[3,2],[8,2],[9,2],[10,2],[11,2],[12,20],[13,2],[14,10],[21,2],[22,2],[23,2],[26,2],[27,2],[28,1],[29,3],[30,30],[31,30],[32,31],[43,1],[53,1],[55,1],[56,1],[57,1],[60,3],[61,3],[62,3],[63,3],[66,9],[67,9],[68,9],[69,9],[70,9],[73,20],[74,20],[75,20],[76,20],[77,20],[80,40],[81,40],[82,40],[83,40],[84,40]]"
+    },
+    {
+      "case": "BLOB LEFT JOIN rowid",
+      "actual": "[[0,1],[1,2],[2,1],[3,2],[4,1],[5,2],[6,2],[7,2],[8,2],[9,2],[10,2],[11,null],[12,2],[13,20],[14,1],[15,1],[16,null],[17,null],[18,null],[19,null],[20,null],[21,2],[22,2],[23,2],[24,null],[25,null],[26,2],[27,2],[28,null],[29,30],[30,3],[31,3],[32,3],[33,1],[34,1],[35,1],[36,1],[37,null],[38,null],[39,1],[40,1],[41,null],[42,1],[43,1],[44,null],[45,null],[46,null],[47,1],[48,2],[49,3],[50,null],[51,null],[52,null],[53,1],[54,2],[55,1],[56,1],[57,10],[58,1],[59,2],[60,3],[61,3],[62,3],[63,null],[64,3],[65,3],[66,9],[67,9],[68,9],[69,null],[70,null],[71,9],[72,9],[73,20],[74,20],[75,20],[76,null],[77,null],[78,20],[79,20],[80,40],[81,40],[82,40],[83,null],[84,null],[85,40],[86,40],[87,null],[88,null],[89,null],[90,null],[91,null],[92,null],[93,null]]",
+      "expected": "[[0,1],[1,2],[2,1],[3,2],[4,null],[5,null],[6,null],[7,null],[8,2],[9,2],[10,2],[11,2],[12,20],[13,2],[14,10],[15,null],[16,null],[17,null],[18,null],[19,null],[20,null],[21,2],[22,2],[23,2],[24,null],[25,null],[26,2],[27,2],[28,1],[29,3],[30,30],[31,30],[32,31],[33,null],[34,null],[35,null],[36,null],[37,null],[38,null],[39,null],[40,null],[41,null],[42,null],[43,1],[44,null],[45,null],[46,null],[47,null],[48,null],[49,null],[50,null],[51,null],[52,null],[53,1],[54,null],[55,1],[56,1],[57,1],[58,null],[59,null],[60,3],[61,3],[62,3],[63,3],[64,null],[65,null],[66,9],[67,9],[68,9],[69,9],[70,9],[71,null],[72,null],[73,20],[74,20],[75,20],[76,20],[77,20],[78,null],[79,null],[80,40],[81,40],[82,40],[83,40],[84,40],[85,null],[86,null],[87,null],[88,null],[89,null],[90,null],[91,null],[92,null],[93,null]]"
+    }
+  ],
+  "stderr": ""
+}

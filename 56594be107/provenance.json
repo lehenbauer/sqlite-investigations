@@ -1,0 +1,29 @@
+{
+  "reported_source_id": "62cf9fb51a6ac16a7d5c9b27aa905e110f48bd3d186440c9be5cc029e68aae6e",
+  "reported_version": "3.55.0",
+  "reported_archive_sha256": "0b352e5a06f7043fd240cf2159662cc5e318f3c97c5ad2ec53f6489ab4495731",
+  "compiler": "Apple clang version 21.0.0 (clang-2100.4.1.1)\nTarget: arm64-apple-darwin27.2.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin\n",
+  "candidate_version_output": "3.55.0 2026-11-05 21:31:50 62cf9fb51a6ac16a7d5c9b27aa905e110f48bd3d186440c9be5cc029e68aalt1 (64-bit)",
+  "checks": {
+    "differential": {
+      "total": 1800,
+      "baseline_mismatches": 612,
+      "candidate_mismatches": 0
+    },
+    "regression": {
+      "total": 67,
+      "baseline_errors": 30,
+      "candidate_errors": 0
+    },
+    "existing_dbpage": {
+      "total": 34,
+      "errors": 0
+    },
+    "existing_dbpagefault": {
+      "total": 813,
+      "errors": 0
+    }
+  },
+  "source_archive": "https://sqlite.org/src/tarball/62cf9fb51a6ac16a7d5c9b27aa905e110f48bd3d186440c9be5cc029e68aae6e/sqlite.tar.gz",
+  "receipt_note": "Recorded during the original investigation, not regenerated during publication preparation. Absolute binary paths and the host name were removed from published receipts; numerical results are unchanged."
+}

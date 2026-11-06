@@ -1,0 +1,5 @@
+**/*-build/
+**/*-src/
+**/reproduction/
+**/*.tar.gz
+**/__pycache__/
